@@ -1,0 +1,10 @@
+Copyright (c) 2026 Lumen-Machina. All rights reserved.
+
+This repository and the software built from it are proprietary. No licence is
+granted to copy, modify, distribute, sublicense or sell any part of it without
+written permission from Lumen-Machina.
+
+Third-party components keep their own licences:
+  third_party/clap/          CLAP headers, MIT licence (third_party/clap/LICENSE)
+  source/stb_truetype.h      public domain
+  tools/assets/*.ttf         SIL Open Font License 1.1 (tools/assets/OFL-*.txt)

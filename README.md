@@ -8,10 +8,16 @@ Every plugin takes its look from one of Lumen-Machina's photographs: its colors,
 
 | Plugin | What it is | Status |
 |---|---|---|
-| **Lumen-Index** | A chord and scale companion: find any chord or scale by name or by the notes you play, put chords on 12 pads, play them with strums and arpeggios, run a progression in time with your song, and drag it all into your arrangement as MIDI. Also a standalone app for MIDI keyboards and hardware synths. | **Released** (1.1) |
+| **[Lumen-Index](plugins/lumen-index.md)** | A chord and scale companion: find any chord or scale by name or by the notes you play, put chords on 12 pads, play them with strums and arpeggios, run a progression in time with your song, and drag it all into your arrangement as MIDI. Also a standalone app for MIDI keyboards and hardware synths. | **Released** (1.1) |
 | **Lumen-Haze** | A tape-worn polysynth for soft pads, fuzzy leads and shoegaze walls. | In development |
 | **Lumen-Oxide** | A tape machine effect: saturation, wow, flutter, hiss and wear, with five tape types (Ferric, Chrome, Reel, VHS, Micro) and three tape speeds. For single tracks, drum buses or a whole mix. | Designing |
 | **Lumen-Serra** | A synth built only from saw waves: drifting unison stacks, saw-made pulse width, hard sync and a string-machine ensemble. | Designing |
+
+## Lumen-Index
+
+[![Lumen-Index: finding chords by the notes you play](docs/images/lumen-index/index.png)](plugins/lumen-index.md)
+
+Find chords and scales by name or by ear, play them from 12 pads with strums and arpeggios, run a progression in time with your song, and drag it all into your arrangement. **[See everything Lumen-Index does →](plugins/lumen-index.md)**
 
 ## Formats
 

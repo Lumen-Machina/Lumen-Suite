@@ -50,7 +50,9 @@ The standalone app has the same window and engine as the plugin and talks to you
 
 ## Getting it
 
-Lumen-Index isn't available to download publicly yet. Release and purchase details will be posted here and at [lumen-machina.com](https://lumen-machina.com).
+**[Get Lumen-Index on Gumroad →](https://lumenmachina.gumroad.com/l/lumen-index)**
+
+Pay what you want, including nothing. Windows and Mac downloads, with every future update free in your Gumroad library.
 
 Found a problem or have an idea? [Open an issue](https://github.com/Lumen-Machina/Lumen-Suite/issues/new/choose) and choose Lumen-Index.
 

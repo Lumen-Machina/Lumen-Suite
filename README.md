@@ -17,7 +17,7 @@ Every plugin takes its look from one of Lumen-Machina's photographs: its colors,
 
 [![Lumen-Index: finding chords by the notes you play](docs/images/lumen-index/index.png)](plugins/lumen-index.md)
 
-Find chords and scales by name or by ear, play them from 12 pads with strums and arpeggios, run a progression in time with your song, and drag it all into your arrangement. **[See everything Lumen-Index does →](plugins/lumen-index.md)**
+Find chords and scales by name or by ear, play them from 12 pads with strums and arpeggios, run a progression in time with your song, and drag it all into your arrangement. **[See everything Lumen-Index does →](plugins/lumen-index.md)** · **[Get it on Gumroad →](https://lumenmachina.gumroad.com/l/lumen-index)**
 
 ## Formats
 
@@ -31,7 +31,8 @@ Formats for the plugins in development are settled when each one is released.
 
 ## Getting the plugins
 
-The plugins are not published here yet. Releases and purchase links will be listed on this page and at [lumen-machina.com](https://lumen-machina.com) as each one becomes available.
+- **Lumen-Index:** [get it on Gumroad](https://lumenmachina.gumroad.com/l/lumen-index), pay what you want.
+- The other plugins will be listed here as each one is released.
 
 ## Feedback
 

@@ -4,10 +4,10 @@ What is coming next, roughly in order. Plans change as each plugin is played wit
 
 ## Now
 - **Lumen-Index:** maintenance releases; bug reports welcome.
-- **Lumen-Core:** shared parts for the whole suite (theme, knobs and meters, presets, the tape engine).
+- **Lumen-Core:** shared parts for the whole suite. The tape engine is in; knobs, meters and the preset code are next.
 
 ## Next
-- **Lumen-Oxide:** the tape effect. The tape engine first comes out of Lumen-Haze into Lumen-Core, so both plugins share it.
+- **Lumen-Oxide:** the tape effect. The sound and presets are in testing; the plugin window is next.
 - **Presets** across the suite: one save and load system, with factory presets for each plugin.
 
 ## Later

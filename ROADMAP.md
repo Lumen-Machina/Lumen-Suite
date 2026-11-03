@@ -3,8 +3,9 @@
 What is coming next, roughly in order. Plans change as each plugin is played with.
 
 ## Now
+- **Lumen-Serra 1.0** is out: the saw synth, with 36 presets. Bug reports and preset ideas welcome.
 - **Lumen-Index:** maintenance releases; bug reports welcome.
-- **Lumen-Core:** shared parts for the whole suite. The tape engine is in; knobs, meters and the preset code are next.
+- **Lumen-Core:** shared parts for the whole suite. The tape engine and the design book (the look every window is built from) are in; knobs, meters and the preset code are next.
 
 ## Next
 - **Lumen-Oxide:** the tape effect. The sound and presets are in testing; the plugin window is next.
@@ -12,5 +13,4 @@ What is coming next, roughly in order. Plans change as each plugin is played wit
 
 ## Later
 - **Lumen-Haze:** release.
-- **Lumen-Serra:** the saw synth.
 - A single download with the whole suite.

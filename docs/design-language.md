@@ -21,6 +21,6 @@ Each Lumen plugin takes its look from one of Lumen-Machina's photographs. What c
 | Lumen-Haze | An oak | Moss and silver |
 | Lumen-Index | (shares Haze's look) | Charcoal, warm silver, deep red accent |
 | Lumen-Oxide | Rusted orange farm machinery: springs, gears, shafts | Deep rust, implement orange, weathered steel, dry grass |
-| Lumen-Serra | A granite ridge under a blue sky | Granite light and shadow, pine green, sky blue |
+| Lumen-Serra | A granite ridge under a blue sky | Dark granite, granite light (`control`), sky blue (`signal`) |
 
 The exact color values live in Lumen-Core.

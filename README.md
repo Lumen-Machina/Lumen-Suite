@@ -21,7 +21,7 @@ Find chords and scales by name or by the notes you play, and put them on 12 pads
 
 New in 1.4: Read chords from a clip as it plays or from a dropped MIDI file, and dragged clips timed at your song's tempo with no tempo prompt in Bitwig.
 
-**[See everything Lumen-Index does →](plugins/lumen-index.md)** · **[Get it on Gumroad →](https://lumenmachina.gumroad.com/l/lumen-index)** · [User guide](https://github.com/Lumen-Machina/Lumen-Index/blob/main/docs/GUIDE.md)
+**[See everything Lumen-Index does →](plugins/lumen-index.md)** · **[Get it on Gumroad →](https://lumenmachina.gumroad.com/l/lumen-index)** · [User guide](plugins/lumen-index-guide.md)
 
 ## Lumen-Serra
 

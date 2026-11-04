@@ -11,7 +11,7 @@ Runs in **Bitwig Studio** (CLAP) and in **Logic Pro, GarageBand and MainStage** 
 - **Read chords from a clip.** Press **Read**, play a clip on the track, and Lumen-Index finds its chords and its key. Or drop a MIDI file on the window: an export from your DAW, or anything from a MIDI pack. One click puts the chords on the pads, and on the progression in time.
 - **Clips you drag out fit your song.** They're timed at the song's tempo and carry no tempo marker, so Bitwig no longer asks to change your tempo when you drop one in. Strums and humanize in them used to be timed for 120 bpm whatever the song.
 - **Bitwig on Windows:** the link between tracks, Caught and Read now keep running with every plugin window closed.
-- **Save log** writes a much fuller report when something goes wrong, and there are fixes around Panic and drag-and-drop. Everything is in the [changelog](https://github.com/Lumen-Machina/Lumen-Index/blob/main/CHANGELOG.md).
+- **Save log** writes a much fuller report when something goes wrong, and there are fixes around Panic and drag-and-drop. The full list is under **NEW IN 1.4** in the manual (`README.txt` in the download).
 
 ## Find chords and scales
 
@@ -51,7 +51,7 @@ Copy a voicing or a set of play settings to every pad at once. Save all twelve p
 
 ## Play a progression
 
-The progression strip under the pads plays them in order, in time with your song: up to 16 slots of half a bar, one bar or two bars, looping over 4, 8 or 16 bars. Click a slot, then click pads, and they fill the slots in order. Use the same pad twice to hold a chord; right-click a slot for a rest.
+The progression strip under the pads plays them in order, in time with your song: up to 16 slots of half a bar, one bar or two bars, looping over 4, 8 or 16 bars. Click a slot, then click pads, and they fill the slots in order. Use the same pad in two slots in a row to hold a chord; right-click a slot for a rest.
 
 It runs while the transport runs, lined up with the bars of your song, so it follows loops and jumps and changes chords exactly on the beat. Arpeggios, strums and Smooth carry on in the strip. Press a pad yourself and it takes over until you let go.
 
@@ -100,10 +100,10 @@ In Bitwig it goes first on an instrument track, as a note effect; in Logic, in t
 
 **[Get Lumen-Index on Gumroad →](https://lumenmachina.gumroad.com/l/lumen-index)**
 
-Pay what you want, including nothing. Windows and Mac downloads, with every future update free in your Gumroad library. The same downloads are on [GitHub releases](https://github.com/Lumen-Machina/Lumen-Index/releases/latest).
+Pay what you want. Windows and Mac downloads; new versions appear in your Gumroad library.
 
-- [User guide](https://github.com/Lumen-Machina/Lumen-Index/blob/main/docs/GUIDE.md): how to use every part, step by step.
-- [Manual](https://github.com/Lumen-Machina/Lumen-Index/blob/main/docs/MANUAL.txt): every control, in one plain-text file. It's also in each download, as `README.txt`.
+- [User guide](lumen-index-guide.md): how to use every part, step by step.
+- Manual: every control, in one plain-text file, `README.txt` in the download. The Mac download also has `README-mac.txt`, with the install steps for Mac.
 
 Found a problem or have an idea? [Open an issue](https://github.com/Lumen-Machina/Lumen-Suite/issues/new/choose) and choose Lumen-Index. If something went wrong, press **Save log** in the plugin's footer right after and attach the file it puts on your Desktop.
 

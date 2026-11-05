@@ -19,7 +19,7 @@ Every plugin takes its look from one of Lumen-Machina's photographs: its colors,
 
 Find chords and scales by name or by the notes you play, and put them on 12 pads with smooth voice leading and hints for what comes next. Run a progression in time with your song, read the chords out of a clip or MIDI file, catch the line you play over them, and drag it all into your arrangement. For Bitwig, Logic, GarageBand and MainStage, and as a standalone app for hardware.
 
-New in 1.4: Read chords from a clip as it plays or from a dropped MIDI file, and dragged clips timed at your song's tempo with no tempo prompt in Bitwig.
+New in 1.4: Read chords from a clip as it plays or from a dropped MIDI file; Undo and Redo, 32 steps deep, for the pads, the progression and the key; scales that play as you browse; slash chords that keep their bass on the pads; and dragged clips timed at your song's tempo with no tempo prompt in Bitwig.
 
 **[See everything Lumen-Index does →](plugins/lumen-index.md)** · **[Get it on Gumroad →](https://lumenmachina.gumroad.com/l/lumen-index)** · [User guide](plugins/lumen-index-guide.md)
 

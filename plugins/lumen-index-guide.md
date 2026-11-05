@@ -118,6 +118,7 @@ This walkthrough uses Bitwig. You'll need a MIDI keyboard, or you can click the 
 1. Click **Pads** in the header if it isn't already showing.
 2. Pick **7ths** (the default), then click **Fill 1–7**. Pads 1–7 now hold the seven chords of your key.
 3. Click **Borrowed**. Pads 8–12 get chords from the parallel key (the major or minor key on the same root), which add colour.
+4. Changed your mind? **Pad sets ▾** has **Undo** and **Redo** for changes to the pads, the progression and the key.
 
 **3. Play the pads**
 
@@ -187,9 +188,18 @@ The window is the same in the plugin and both apps. It's a fixed size (1200 × 7
 
 The default key is C Major with flats. The key decides how notes are spelt, the Roman numerals, which pads are dimmed as out of key, what **Fill 1–7** and **Borrowed** put on the pads, the Hints, and what Snap treats as the scale. Linked instances share the key.
 
+A key change made in this menu can be undone (see [Undo and Redo](#undo-and-redo)).
+
 ### Footer
 
-- **Status text**: the last message, for example "Sent Cmaj7 (Root, Close) to pad 3." The message stays until the next one. Until the first message, it shows a hint for the page (and while you fill progression slots, it shows the filling hint instead of any message):
+- **Status text**: what just happened, for example "Sent Cmaj7 (Root, Close) to pad 3." A message shows for about 6 to 15 seconds, depending on how long it is (a warning, such as "Could not write the log file.", about 4 seconds more). Then the page's hint comes back. A new message, even the same one again, starts its time again.
+  - While you hold a pad (or press on anything you can drag out), and while you drag a clip out, the message stays until you let go or drop; then its time starts again.
+  - While Read is waiting or reading, the footer shows "Reading: play the clip on this track." instead of the page's hint.
+  - While you fill progression slots, it shows the filling hint instead of any message.
+  - "Type a name for the set first." stays while the set's name field is still empty.
+  - Switching pages shows that page's hint, unless a message is still showing.
+
+  The hints:
   - Index: "← → ↑ ↓ browse · Space replays · Enter adds to the shortlist"
   - Pads: "Hold a pad to play it · drag it into the arranger for a clip"
   - While filling progression slots: "Click pads to fill the progression in order · Esc stops"
@@ -205,7 +215,8 @@ The default key is C Major with flats. The key decides how notes are spelt, the 
 - The mouse wheel or trackpad scrolls the results, the detail panel, the KEY menu's scale list, the Pad sets list and the pad editor's chord grid. You can also drag the results scrollbar.
 - A double-click works like a single click.
 - **Esc** closes an open menu, or stops filling progression slots. Clicking outside a menu also closes it.
-- On a Mac, keys the window doesn't use, and any key with Command, go on to the host, so its transport shortcuts still work.
+- **Ctrl+Z** undoes and **Ctrl+Shift+Z** or **Ctrl+Y** redoes (on a Mac, **Cmd+Z**, **Cmd+Shift+Z**, **Cmd+Y**), when the Lumen-Index window has the keyboard and you're not typing in FIND or a set name. See [Undo and Redo](#undo-and-redo).
+- On a Mac, keys the window doesn't use, and any key with Command other than Undo and Redo, go on to the host, so its transport shortcuts still work.
 
 ---
 
@@ -290,7 +301,7 @@ With no notes selected, Chords lists every chord the filters allow. Scales, with
 
 If nothing matches: "Nothing matches. Try Contains, or clear a filter."
 
-- **Click a tile** to select it. A chord tile also plays; to hear a scale, use **▶ Play** in the right column.
+- **Click a tile** to select it and hear it: a chord plays as a chord, a scale note by note (see [Scales view](#scales-view)).
 - **Drag a chord tile** into your DAW for a one-bar clip (see [Getting it into your song](#getting-it-into-your-song)).
 
 ### Browsing with the keys
@@ -302,16 +313,16 @@ When FIND isn't taking your typing:
 | ← / → | previous / next result |
 | ↑ / ↓ | up / down one row (2 results) |
 | PgUp / PgDn | 12 results back / on |
-| Space | replay the selected chord (Chords only) |
-| Enter | add the chord to the shortlist, or take it out if it's already there |
+| Space | replay the selected chord or scale |
+| Enter | add the chord to the shortlist, or take it out if it's already there (Chords only) |
 
-**● Play as I browse** (Chords, on by default) plays each result as you move to it with the arrow keys.
+**● Play as I browse** (on by default) plays each result as you move to it with the arrow keys or PgUp / PgDn: a chord as a chord, a scale note by note. It's shown in both Chords and Scales, and it's one setting for both.
 
 ### Lead-in
 
 **Lead-in** (Chords, with − / + buttons) plays one of your pads before each candidate, so you hear every chord coming from the chord before it. The values are None, then "Pad 1 · Cmaj7" through "Pad 12".
 
-With a lead-in, each audition plays the pad, a short gap, then the candidate. Without one, the candidate plays on its own.
+With a lead-in, each audition plays the pad, a short gap, then the candidate. Without one, the candidate plays on its own. The lead-in is for chords only: scales always play on their own.
 
 ### Chord details
 
@@ -321,11 +332,11 @@ The right column shows the selected chord:
 - A Roman-numeral pill and "in C Major", or, for a chord with notes outside the key, "borrowed: A♭ not in key".
 - A keyboard with the notes labelled by degree.
 - **NOTES**, **INTERVALS** and **VOICED** (with octave numbers, for example "C3 E3 G3").
-- **INVERSION**: **Root / 1st / 2nd / 3rd**. An inversion puts a different chord note at the bottom: 1st inversion has the 3rd lowest, 2nd the 5th. At most four buttons are shown, even for 5- and 6-note chords.
+- **INVERSION**: **Root / 1st / 2nd / 3rd**. An inversion puts a different chord note at the bottom: 1st inversion has the 3rd lowest, 2nd the 5th. At most four buttons are shown, even for 5- and 6-note chords. For a slash chord (C/E), the inversion that puts its bass at the bottom is lit to begin with.
 - **VOICING**: **Close / Open / Drop-2 / Spread** (explained under [Chord tab](#chord-tab)). Changing the inversion or voicing plays the chord again.
 - **▶ Play** plays it. Index chords play around C3, at velocity 0.75, through your instrument.
 - **☆ Shortlist / ★ In shortlist** adds it to the shortlist, or takes it out.
-- **SEND TO PAD 1–12** puts this chord on that pad: root, spelling, chord type, and the inversion and voicing you picked. The pad keeps its octave and play settings. Status: "Sent Cmaj7 (Root, Close) to pad 3." There's no Undo for this. A slash chord's bass note isn't sent (the status still names the slash chord): to keep that note at the bottom, pick the inversion that puts it there before you send.
+- **SEND TO PAD 1–12** puts this chord on that pad: root, spelling, chord type, and the inversion and voicing you picked. The pad keeps its octave and play settings. Status: "Sent Cmaj7 (Root, Close) to pad 3." It can be undone (see [Undo and Redo](#undo-and-redo)). A slash chord (C/E) is played, starred, dragged and sent in the inversion that puts its bass at the bottom, so the pad keeps that bass note; pick another **INVERSION** first if you want a different one.
 - **FOUND IN**: up to six common 7-note scales that contain the chord. Click one to jump to that scale in Scales mode.
 
 ### Shortlist
@@ -351,9 +362,10 @@ The right column shows the selected scale:
 - The root (in red) and name, with "also …" names, the number of notes and its families.
 - A keyboard labelled with degrees (the octave shows as "8").
 - **NOTES** and **DEGREES**. For Melodic Minor, also **DESCENDING**: the natural minor, read downward, as it's traditionally played going down.
-- **▶ Play** plays the scale going up, with the octave on top. For scales of more than 7 notes (bebop, diminished and so on), it plays the first 7 notes, then the octave.
-- **Set as key** makes it your key, choosing flats or sharps from the root's spelling. Status: "Key set to D Dorian. Shared with linked instances."
-- **Fill pads 1–7** fills pads 1–7 from this scale at the size chosen on the Pads page (Triads, 7ths or 9ths). Unlike **Fill 1–7** on the Pads page, this one has no Undo.
+- **▶ Play** plays the scale going up, one note at a time, 150 ms apart: every note of it, starting from its root in middle C's octave (C3 to B3), then the octave on top. A bebop scale plays all 8 notes and the octave, the chromatic scale all 12 and the octave. Status: "Played D Dorian through the instrument: 7 notes, then the octave."
+- You hear a scale the same way when you click its tile, press **Space** (it replays the selected scale), or step to it with the arrow keys while **● Play as I browse** is on.
+- **Set as key** makes it your key, choosing flats or sharps from the root's spelling. Status: "Key set to D Dorian. Shared with linked instances." It can be undone.
+- **Fill pads 1–7** fills pads 1–7 from this scale at the size chosen on the Pads page (Triads, 7ths or 9ths). Status: "Pads 1–7 filled from Dorian." Like **Fill 1–7** on the Pads page, it can be undone (see [Undo and Redo](#undo-and-redo)).
 - **MODES OF …** (for scales in the Major, Harmonic minor, Melodic minor and Major pentatonic families): each mode, shown on the root that shares this scale's notes. A mode is the same set of notes started from a different degree: D Dorian has the notes of C Major. Click one to go to it.
 - **CHORDS ON EACH DEGREE** (7-note scales): a triad and a 7th on each degree, built by stacking thirds. For other scales, **CHORDS THAT FIT EACH DEGREE**: the most common triad and 4-note chord that fit. Each shows its numeral. Click one to hear it.
 
@@ -471,7 +483,7 @@ Hints need a pad to have been played first. The setting is saved with the projec
 
 The right column edits the selected pad. Its header shows "PAD n", its trigger key, the chord name, a numeral pill, and "in C Major" or "out of key". It has two tabs, **Chord** and **Play**; the open tab is saved with the project.
 
-There's no Undo for edits in the pad editor.
+Every change in the pad editor can be undone (see [Undo and Redo](#undo-and-redo)). Quick changes to one control, such as dragging **STRUM** or clicking **+** several times, count as one step.
 
 #### Chord tab
 
@@ -524,7 +536,9 @@ Humanize works on chords, strums and arpeggios.
 - On the Chord tab, **Copy voicing to all pads** copies only the voicing to the other 11 pads. It doesn't copy the root, chord, inversion or octave. Status: "Voicing copied to all pads."
 - On the Play tab, **Copy play settings to all pads** copies the whole Play tab to the other 11 pads: strum and its direction, velocity mode, value and curve, arpeggio mode, rate, octaves and gate, and both humanize settings. Status: "Strum, velocity, arpeggio and humanize copied to all pads."
 
-### Pad sets and Undo
+Both copy buttons can be undone.
+
+### Pad sets, Undo and Redo
 
 A pad set saves all 12 pads, with every Chord and Play setting, plus the progression (its slots, slot length and loop length). It doesn't save the progression's On/Off, Smooth, Hints, the key or the shortlist. Pad sets are shared by every project on the computer.
 
@@ -543,20 +557,34 @@ Names can use plain letters, digits, spaces and `- _ . ( ) ' # & + ,`, up to 39 
 
 In the name field, Enter saves, Esc closes the menu and Tab leaves the field.
 
-#### Undo
+#### Undo and Redo
 
-When there's something to undo, the bottom of the menu shows **Undo (back to <previous set name>)** or **Undo (back to the pads before)**. Click it to put the pads back. Status: "Pads put back as they were before the load."
+**Undo** and **Redo** sit at the bottom of the **PAD SETS** menu. They take back what you change in the pads, the progression and the key, up to 32 steps.
 
-| Undo covers | Undo doesn't cover |
-|---|---|
-| loading a pad set | **Fill pads 1–7** on the Index's Scales view |
-| **Fill 1–7** on the Pads page | **Send to pad** |
-| **Borrowed** | edits in the pad editor |
-| **Read → Pads only** and **Pads + progression** | a key change (from Read's **Set to <key>** or anywhere else) |
+- **Undo** names what it will take back, for example **Undo Fill 1–7**, **Undo Send to pad 3**, **Undo pad 2 voicing** or **Undo load of "lo-fi keys"**. On the right, the menu shows how many steps there are to undo ("3 steps"). Click it to go back one step; the menu stays open, so you can click again. Status: "Undid Fill 1–7."
+- **Redo** appears once you've undone something, named the same way. It puts back what you undid, one step at a time, until you make a new change: a new change clears Redo. Status: "Redid Fill 1–7."
+- With nothing to undo or redo, the menu shows "Click a set to load it. Sets are shared by every project." instead.
 
-- There's one level of Undo: only the last of these actions.
-- It puts back the pads and the progression, but leaves the progression's On/Off as it is now.
-- Undo isn't saved with the project, and it lives in the open window: closing the plugin window can lose it, so use it before you close the window.
+**From the keyboard**: **Ctrl+Z** undoes, **Ctrl+Shift+Z** or **Ctrl+Y** redoes (on a Mac, **Cmd+Z**, **Cmd+Shift+Z** or **Cmd+Y**). They work when the Lumen-Index window has the keyboard (click in it first) and you're not typing in FIND or a set name. Whether a host such as Bitwig passes these keys on to a plug-in window depends on the host; the **Undo** and **Redo** buttons in **Pad sets ▾** always work.
+
+**What a step puts back**: all 12 pads, with every Chord and Play setting; the progression (its slots, slot length and loop length; its **On / Off** is left as it is now); and the key (root, scale, and flats or sharps). Linked instances follow the key back. Undoing the load of a pad set also puts back the name the **Pad sets** button showed before.
+
+**What makes a step**:
+
+- **Fill 1–7** and **Borrowed** on the Pads page
+- **Fill pads 1–7**, **Set as key** and **Send to pad** on the Index
+- Read's **Pads only** and **Pads + progression** (with **Set to <key>** on, the key too)
+- loading a pad set
+- any change in the KEY menu
+- filling and clearing progression slots, and changing **SLOT** or **BARS**
+- **Copy voicing to all pads** and **Copy play settings to all pads**
+- every control in the pad editor
+
+A click that changes nothing makes no step. Quick repeated changes to one control on one pad count as one step: dragging **STRUM** or **VELOCITY**, or clicking **+** on **OCTAVE** several times, as long as each change comes within 1.5 seconds of the one before. Clicking through roots or scales in the KEY menu, and filling progression slots one after another, work the same way. After an Undo or a Redo, the next change is a step of its own.
+
+**Not undo steps**: saving or deleting a pad set file, the progression's **On / Off**, the role, **Snap** and **Snap to**, the link number, **Output channel** (**CH** in the apps), **Trigger keys**, **Smooth**, **Hints**, the Triads / 7ths / 9ths choice, and anything on the Index other than the buttons above (filters, notes, the shortlist).
+
+**How long it lasts**: the history is kept by the plugin, not by its window, so closing and reopening the plugin window doesn't lose it. It isn't saved with the project, and it starts empty when a project loads (in the standalone apps, when the app starts). After 32 steps, the oldest goes.
 
 ### Drag all pads
 
@@ -586,6 +614,7 @@ A new instance starts with slots 1–4 set to pads 1, 6, 4 and 5 (I vi IV V: Cma
 
 - **Holds**: the same pad in two slots in a row holds the chord. The second slot shows "—".
 - **Rests**: right-click a slot to clear it (Control-click on a Mac). An empty slot shows "+" and is silent. Status: "Slot 4 cleared (silence)."
+- Filling and clearing slots, and changing **SLOT** or **BARS**, can be undone (see [Undo and Redo](#undo-and-redo)). Switching the progression **On** or **Off** isn't an undo step.
 
 ### On / Off and timing
 
@@ -617,7 +646,7 @@ Click **Read ▾** on the Pads page (Pads role) to open **READ CHORDS**. While R
 
 ### Read a clip as it plays
 
-1. Click **● Read**. The menu shows "Waiting for the song · Play the clip on this track. Reading starts with its first note." and **Cancel**.
+1. Click **● Read**. The menu shows "Waiting for the song · Play the clip on this track. Reading starts with its first note." and **Cancel**. Until reading ends, the footer comes back to "Reading: play the clip on this track." whenever no newer message is showing.
 2. Play the clip **on the same track** as this Lumen-Index, so its notes come into it.
 3. Reading starts at the first note while the transport plays. The menu shows the bar and the note count, with **Done** and **Cancel**.
 4. It stops by itself when the song loops back, the transport stops, or after 64 bars. Or press **Done**.
@@ -680,7 +709,7 @@ The heading shows "N chords · N bars", with the source on the right: the file n
 
 After either button the menu closes and the Pads page shows. Status, for example: "Pads 1–4 and the progression from My verse, in A Natural Minor. Pad sets ▾ has Undo."
 
-**Undo** (in **Pad sets ▾**) puts the pads and the progression back, but **not the key**. If **Set to <key>** changed your key, change it back in the KEY menu.
+**Undo** (in **Pad sets ▾**, or Ctrl+Z) puts back the pads, the progression and, if **Set to <key>** changed it, the key (see [Undo and Redo](#undo-and-redo)).
 
 If nothing was found, the panel says "No chords in it", with "Its notes never sound as a chord or an arpeggio." or "It has no notes.", and **Read again**.
 
@@ -707,7 +736,7 @@ The footer hint reminds you: "Same link number here and on the pads track".
 - **The linked chord**: "LINK 1 · FROM THE PADS TRACK", the chord name, large, with its numeral ("V7 in C Major"), and a tile for each chord tone. The root tile is red and labelled "root"; the others show their degree. The **Bass guide** dims every tile except the root and the 5th, the safe notes for a bass line.
 - With no chord yet: "No chord from the pads track yet". With the link off: "Link is off".
 - **LAST NOTES ON THIS TRACK**: the last 4 notes you played here, each labelled "chord tone · 3 of G7", "scale note · 6 of C Major" or "outside C Major", in colour.
-- **The keyboard on the left** lights the chord's tones: "root" and "chord tones" in the Melody guide, or "root (play this)" and "5th" in the Bass guide. Scale notes are shaded. When Snap moves or mutes a key you press because it's outside the scale, that key is outlined red for as long as you hold it (the legend calls this "outside (flashes)", but the outline is steady). With Snap **Off** the note plays as it is and isn't outlined; **LAST NOTES ON THIS TRACK** still labels it "outside".
+- **The keyboard on the left** lights the chord's tones: "root" and "chord tones" in the Melody guide, or "root (play this)" and "5th" in the Bass guide. Scale notes are shaded. A key you press that's outside the key is outlined red ("outside the key") for as long as you hold it, whatever Snap does with it: with Snap **Off** the note plays as it is and is only marked; with Snap on it's also moved or muted. **LAST NOTES ON THIS TRACK** labels it "outside C Major" too.
 
 ### Snap
 
@@ -717,7 +746,7 @@ Snap moves or mutes the notes you play that fall outside the scale or the chord,
 
   | Setting | Notes outside the scale or chord… |
   |---|---|
-  | **Off** (default) | play as they are; the guide only shows |
+  | **Off** (default) | play as they are; the guide only shows them (a key outside the key is still outlined red) |
   | **Nearest** | move to the nearest allowed note (a tie goes down) |
   | **Up** | move up to the next allowed note |
   | **Down** | move down to the next allowed note |
@@ -787,7 +816,7 @@ Press on any of these, move a few pixels, and drop on the arranger or a launcher
 | Drag | Clip |
 |---|---|
 | A **pad** | one bar of its chord, with its inversion, voicing, octave, strum, arpeggio and humanize |
-| A **chord tile** on the Index | one bar, root position, close voicing (the selected tile uses the inversion and voicing you picked) |
+| A **chord tile** on the Index | one bar, close voicing, in root position or, for a slash chord, with its bass at the bottom (the selected tile uses the inversion and voicing you picked) |
 | A **shortlist chip** | one bar of that chord, with its saved inversion and voicing |
 | **Drag as clip** (shortlist) | one bar per shortlist chord |
 | **Drag all pads** | 12 bars, one per pad, with arpeggios, strums and humanize; Smooth across them if on |
@@ -881,7 +910,7 @@ The apps save the MIDI IN and OUT device names and everything the plugin would s
 
 ### Not saved
 
-FIND text, the filters, the selected notes, Follow MIDI, Slash, Contains/Exact, Caught, Read results and Undo.
+FIND text, the filters, the selected notes, Follow MIDI, Slash, Contains/Exact, Caught, Read results, and the Undo and Redo history.
 
 ### Pad set files
 
@@ -944,9 +973,14 @@ Fixed in 1.4: dragged clips no longer carry a tempo or time signature, so Bitwig
 
 Bitwig may keep Shift from plug-in windows. Type in lowercase (`ebm9`); for sharps, use the **ROOT** filter. See [FIND](#find).
 
-### Undo has disappeared
+### Undo is empty, or Ctrl+Z does nothing
 
-Undo keeps only the last action, isn't saved with the project, and can be lost when you close the plugin window. See [Undo](#undo).
+- The Undo history isn't saved with the project: it starts empty each time a project loads (in the apps, each time the app starts). Closing and reopening the plugin window keeps it.
+- Only changes to the pads, the progression and the key are undo steps. Switching the progression On or Off, Snap, the link, the role and the trigger keys aren't.
+- It keeps the last 32 steps. Redo empties as soon as you make a new change.
+- Ctrl+Z (Cmd+Z on a Mac) only reaches Lumen-Index when its window has the keyboard: click in the window first. It does nothing while you're typing in FIND or a set name. If your host keeps the key for itself, use **Undo** and **Redo** in **Pad sets ▾**, which always work.
+
+See [Undo and Redo](#undo-and-redo).
 
 ### Smooth or Hints seem to do nothing
 
@@ -981,8 +1015,10 @@ Each save overwrites the last file, so rename it first if you want to keep an ea
 | Index | ← / → | previous / next result |
 | Index | ↑ / ↓ | up / down one row |
 | Index | PgUp / PgDn | 12 results back / on |
-| Index | Space | replay the selected chord |
-| Index | Enter | add to the shortlist, or remove if already there |
+| Index | Space | replay the selected chord or scale |
+| Index (Chords) | Enter | add to the shortlist, or remove if already there |
+| Anywhere, not typing | Ctrl+Z (Mac: Cmd+Z) | Undo |
+| Anywhere, not typing | Ctrl+Shift+Z or Ctrl+Y (Mac: Cmd+Shift+Z or Cmd+Y) | Redo |
 | FIND field | Enter, Esc or Tab | leave the field |
 | Pad sets name field | Enter | save |
 | Pad sets name field | Esc | close the menu |
@@ -1030,7 +1066,9 @@ All are stepped.
 | Arpeggio | up to 24 notes, over 1–3 octaves |
 | Progression | up to 16 slots of 1/2, 1 or 2 bars; loops of 4, 8 or 16 bars (half-bar slots: up to 8) |
 | Shortlist | 24 chords |
+| Previews (▶ Play, a tile click, browsing) | up to 16 notes; a scale plays every note and the octave (chromatic: 13 notes) |
 | Pad sets | 200 listed; names up to 39 characters |
+| Undo | 32 steps; Redo as many as you've undone |
 | Read | 64 bars, 4096 notes, 256 chords and rests, 12 pads, files up to 16 MB |
 | Caught | 4 cards, the last 48 notes per chord |
 | Dragged clip | 24 chords, 256 single notes |
@@ -1060,7 +1098,7 @@ maj, m, °, +, sus2, sus4, 5, 6, m6, 6/9, m6/9, maj7, 7, m7, m(maj7), m7♭5, °
 - On a Mac, the link only reaches instances in the same process.
 - The window can't be resized, only scaled.
 - Read finds only major and natural minor keys, only the 41 chord types, and at most 64 bars.
-- One level of Undo, which lives in the window and doesn't restore the key. Index **Fill pads 1–7**, **Send to pad** and pad editor edits have no Undo.
+- Undo isn't saved with the project, and whether a host passes Ctrl+Z / Cmd+Z on to the plug-in window depends on the host; **Undo** and **Redo** in **Pad sets ▾** always work.
 - **Pads + progression** doesn't switch the progression On.
 - At most four inversion buttons (Root to 3rd).
 - Pad cards always spell trigger keys with sharps.

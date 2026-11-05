@@ -9,6 +9,10 @@ Runs in **Bitwig Studio** (CLAP) and in **Logic Pro, GarageBand and MainStage** 
 ## What's new in 1.4
 
 - **Read chords from a clip.** Press **Read**, play a clip on the track, and Lumen-Index finds its chords and its key. Or drop a MIDI file on the window: an export from your DAW, or anything from a MIDI pack. One click puts the chords on the pads, and on the progression in time.
+- **Undo and Redo, 32 steps deep.** Everything you change in the pads, the progression and the key can be taken back and put back again: fills, Borrowed, Send to pad, Read, loading a pad set, key changes, the progression's slots and every pad setting. Use the buttons in **Pad sets**, which always work, or **Ctrl+Z** (**Cmd+Z** on a Mac) when the plugin window has the keyboard. Undo now puts the key back too, and keeps its history when you close the plugin window.
+- **Scales play as you browse.** Click a scale, press **Space**, or step through them with the arrow keys, and you hear it played upward one note at a time: every note of it, even the eight of a bebop scale or all twelve of the chromatic, then the octave.
+- **Slash chords keep their bass.** Send C/E to a pad and it goes on with E at the bottom, as it was played on the Index.
+- **The footer tidies up after itself:** a message shows for a few seconds, then the page's hint comes back. In the guides, a key you hold that's outside the key is now outlined red on the keyboard, even with Snap off.
 - **Clips you drag out fit your song.** They're timed at the song's tempo and carry no tempo marker, so Bitwig no longer asks to change your tempo when you drop one in. Strums and humanize in them used to be timed for 120 bpm whatever the song.
 - **Bitwig on Windows:** the link between tracks, Caught and Read now keep running with every plugin window closed.
 - **Save log** writes a much fuller report when something goes wrong, and there are fixes around Panic and drag-and-drop. The full list is under **NEW IN 1.4** in the manual (`README.txt` in the download).
@@ -17,13 +21,13 @@ Runs in **Bitwig Studio** (CLAP) and in **Logic Pro, GarageBand and MainStage** 
 
 The **Index** page is a dictionary of 41 chord types and 56 scales on every root. Type a name into **FIND** (`ebm9`, `sus`, `f#maj7`, `dorian`, `d hirajoshi`, `bebop`), or play a few notes on your keyboard, or click them, and every chord or scale that holds them comes up, best match first. **Contains** shows everything that holds your notes; **Exact** only what matches them exactly. Filters for root, quality and extension (or, for scales, family and number of notes) narrow it down.
 
-Browse by ear: the arrow keys step through the results and each chord plays as you reach it. Set a **Lead-in** pad and every candidate plays after it, so you hear each one coming from your chord, not on its own.
+Browse by ear: the arrow keys step through the results and each chord or scale plays as you reach it. Set a **Lead-in** pad and every candidate chord plays after it, so you hear each one coming from your chord, not on its own.
 
-Every chord shows its notes, intervals and Roman numeral in your key (or what it borrows from outside it), with your choice of inversion and voicing, and the common scales it's found in. Send it to any pad in one click. Keep the good ones in a **shortlist** of up to 24, play it back in order, and drag it out as a progression.
+Every chord shows its notes, intervals and Roman numeral in your key (or what it borrows from outside it), with your choice of inversion and voicing, and the common scales it's found in. Send it to any pad in one click; a slash chord keeps its bass note at the bottom. Keep the good ones in a **shortlist** of up to 24, play it back in order, and drag it out as a progression.
 
 ![The Index page: every chord containing C, E♭, G and B♭, in B♭ major, with Cm7 open](../docs/images/lumen-index/index.png)
 
-Every scale shows its notes and degrees, its modes, and the chords on each degree; click a chord to hear it. **Set as key** makes the scale your key, and **Fill pads 1–7** puts its chords on the pads.
+Every scale shows its notes and degrees, its modes, and the chords on each degree; click a chord to hear it. Click the scale itself to hear it played upward, every note and then the octave. **Set as key** makes the scale your key, and **Fill pads 1–7** puts its chords on the pads.
 
 ![The Scales view: 90 scales holding those notes, C Minor Pentatonic open with its modes and chords on each degree](../docs/images/lumen-index/scales.png)
 
@@ -47,7 +51,7 @@ Each pad also has its own way of playing:
 - **Arpeggio**: up, down, up/down, random, or the whole chord retriggered; 1/4 to 1/32 with triplets; one to three octaves; gate from 25 to 100%. It follows the song's tempo and lands on its grid.
 - **Humanize**: timing (up to 35 ms) and velocity (up to 30%), on chords, strums and arpeggios alike.
 
-Copy a voicing or a set of play settings to every pad at once. Save all twelve pads, with every setting and the progression, as a named **pad set** and load it in any project. Loading a set, Fill 1–7, Borrowed and Read can each be undone.
+Copy a voicing or a set of play settings to every pad at once. Save all twelve pads, with every setting and the progression, as a named **pad set** and load it in any project. **Undo** and **Redo** go back and forth through your last 32 changes to the pads, the progression and the key, from the buttons in **Pad sets** or with **Ctrl+Z** (**Cmd+Z** on a Mac).
 
 ## Play a progression
 
@@ -62,7 +66,7 @@ Got a chord part already? Open **Read** on the Pads page and either:
 - **play it:** press Read, then play the clip on the same track; reading starts with its first note and stops when the song loops back or stops (up to 64 bars); or
 - **drop a MIDI file** on the window, or open one. Drums (on channel 10) are left out.
 
-Lumen-Index finds the chords bar by bar, one, two or four to a bar, whichever fits, and copes with block chords, arpeggios, slash chords, and a melody played over the chords. It finds the key too (major or natural minor). Click any chord to hear it, then put them on the pads in the order they come, at the inversion and octave they were played, with or without the progression in time, and change your key to match if you like. Pad sets has Undo for the pads and progression.
+Lumen-Index finds the chords bar by bar, one, two or four to a bar, whichever fits, and copes with block chords, arpeggios, slash chords, and a melody played over the chords. It finds the key too (major or natural minor). Click any chord to hear it, then put them on the pads in the order they come, at the inversion and octave they were played, with or without the progression in time, and change your key to match if you like. Undo puts back the pads, the progression and the key.
 
 (Bitwig and Logic don't hand a clip dragged from their arranger to a plugin window, which is why Read listens to the clip as it plays, alongside the file drop.)
 
@@ -70,7 +74,7 @@ Lumen-Index finds the chords bar by bar, one, two or four to a bar, whichever fi
 
 ## Guide your melody and bass
 
-Put Lumen-Index on a melody or bass track too, set it to **Melody guide** or **Bass guide**, and link it to your pads track with the same link number. The guide shows the chord being played and lights its tones (the bass guide points you to the root and the 5th), and checks each note you play: chord tone, scale note, or outside the key. Linked tracks share the key, so changing it on one changes it on all of them.
+Put Lumen-Index on a melody or bass track too, set it to **Melody guide** or **Bass guide**, and link it to your pads track with the same link number. The guide shows the chord being played and lights its tones (the bass guide points you to the root and the 5th), and checks each note you play: chord tone, scale note, or outside the key (outlined red on its keyboard while you hold it, even with Snap off). Linked tracks share the key, so changing it on one changes it on all of them.
 
 **Snap** can move stray notes up, down or to the nearest note in the scale or chord, or mute them.
 

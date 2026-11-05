@@ -28,7 +28,7 @@ New in 1.4: Read chords from a clip as it plays or from a dropped MIDI file; Und
 
 [![Lumen-Serra: four oscillators of saws, the live scope, filter, amp and ensemble](docs/images/lumen-serra/serra.png)](plugins/lumen-serra.md)
 
-Thirty-two saws, including a bank of hollow bipolar saws, stacked four deep on four oscillators, reshaped with Width and Sync, through eight filter types and a string ensemble. **[See everything Lumen-Serra does →](plugins/lumen-serra.md)**
+Thirty-two saws, including a bank of hollow bipolar saws, stacked four deep on four oscillators, reshaped with Width and Sync, through eight filter types and a string ensemble. **[See everything Lumen-Serra does →](plugins/lumen-serra.md)** · [User guide](plugins/lumen-serra-guide.md)
 
 ## Lumen-Spectre
 

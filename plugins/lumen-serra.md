@@ -2,7 +2,7 @@
 
 **A synth built only from saw waves.** Thirty-two saw shapes in two banks, four oscillators of up to four detuned saws each, saw-made pulse width and hard sync, eight filter types with their own envelope, Poly, Mono and Legato, and a string-machine ensemble. For drifting pads, fuzzy basses, house stabs, acid lines and walls of sound.
 
-Runs in **Bitwig Studio** (and any CLAP host) on Windows and Mac, and in **Logic Pro** as an Audio Unit. Current version: **1.1**.
+Runs in **Bitwig Studio** (and any CLAP host) on Windows and Mac, and in **Logic Pro** as an Audio Unit. Current version: **1.1** · [User guide](lumen-serra-guide.md)
 
 ![Lumen-Serra: four oscillators, the live scope, filter, amp and ensemble](../docs/images/lumen-serra/serra.png)
 
@@ -57,6 +57,8 @@ In Bitwig, the controls are laid out on remote-control pages for your controller
 ## Getting it
 
 Downloads for Windows and Mac are coming to Gumroad.
+
+- [User guide](lumen-serra-guide.md): every control, the presets, and recipes for supersaws, sync leads, acid lines and more.
 
 Found a problem or have an idea? [Open an issue](https://github.com/Lumen-Machina/Lumen-Suite/issues/new/choose) and choose Lumen-Serra.
 

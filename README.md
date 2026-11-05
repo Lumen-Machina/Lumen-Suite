@@ -11,7 +11,7 @@ Every plugin takes its look from one of Lumen-Machina's photographs: its colors,
 | **[Lumen-Index](plugins/lumen-index.md)** | A chord and scale companion: find any chord or scale by name or by the notes you play, put chords on 12 pads with borrowed chords and smooth voice leading, read the chords of a clip or MIDI file, run a progression in time with your song, catch what you play over it, and drag it all into your arrangement as MIDI. Also a standalone app for MIDI keyboards and hardware synths. | **Released** (1.4) |
 | **Lumen-Haze** | A tape-worn polysynth for soft pads, fuzzy leads and shoegaze walls. | In development |
 | **Lumen-Oxide** | A tape machine effect: saturation, wow, flutter, hiss and wear, with five tape types (Ferric, Chrome, Reel, VHS, Micro) and three tape speeds. For single tracks, drum buses or a whole mix. | In testing (0.1) |
-| **[Lumen-Serra](plugins/lumen-serra.md)** | A synth built only from saw waves: 32 saw shapes in two banks, four drifting unison stacks, saw-made pulse width, hard sync, eight filter types and a string-machine ensemble. 36 presets. | **Released** (1.0) |
+| **[Lumen-Serra](plugins/lumen-serra.md)** | A synth built only from saw waves: 32 saw shapes in two banks, four drifting unison stacks, saw-made pulse width, hard sync, eight filter types, eight-note polyphony and a string-machine ensemble. 36 presets. | **Released** (1.1) |
 
 ## Lumen-Index
 

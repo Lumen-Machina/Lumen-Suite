@@ -2,7 +2,7 @@
 
 **A synth built only from saw waves.** Thirty-two saw shapes in two banks, four oscillators of up to four detuned saws each, saw-made pulse width and hard sync, eight filter types with their own envelope, Poly, Mono and Legato, and a string-machine ensemble. For drifting pads, fuzzy basses, house stabs, acid lines and walls of sound.
 
-Runs in **Bitwig Studio** (and any CLAP host) on Windows and Mac, and in **Logic Pro** as an Audio Unit. Current version: **1.0**.
+Runs in **Bitwig Studio** (and any CLAP host) on Windows and Mac, and in **Logic Pro** as an Audio Unit. Current version: **1.1**.
 
 ![Lumen-Serra: four oscillators, the live scope, filter, amp and ensemble](../docs/images/lumen-serra/serra.png)
 
@@ -27,7 +27,7 @@ Every wavetable is band-limited, and shapes crossfade as they change, so sweepin
 - **Filter:** Off, low-pass 12 and 24 dB, high-pass 12 and 24 dB, Band, Notch and Peak, with Resonance, Key track and a Hi-pass ahead of it to keep big stacks clean.
 - **Filter envelope:** a full ADSR of up to six octaves either way.
 - **Amp envelope:** ADSR.
-- **Voices:** Poly (four notes), Mono, or Legato, with Glide.
+- **Voices:** Poly (eight notes), Mono, or Legato, with Glide.
 - **Ensemble:** two choruses and a string-machine ensemble.
 - A limiter keeps the output from clipping, however many saws you stack.
 

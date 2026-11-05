@@ -6,7 +6,7 @@ body:
     id: plugin
     attributes:
       label: Plugin
-      options: [Lumen-Index, Lumen-Haze, Lumen-Oxide, Lumen-Serra]
+      options: [Lumen-Index, Lumen-Haze, Lumen-Oxide, Lumen-Serra, Lumen-Spectre]
     validations:
       required: true
   - type: input

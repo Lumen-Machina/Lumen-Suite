@@ -12,6 +12,7 @@ Every plugin takes its look from one of Lumen-Machina's photographs: its colors,
 | **Lumen-Haze** | A tape-worn polysynth for soft pads, fuzzy leads and shoegaze walls. | In development |
 | **Lumen-Oxide** | A tape machine effect: saturation, wow, flutter, hiss and wear, with five tape types (Ferric, Chrome, Reel, VHS, Micro) and three tape speeds. For single tracks, drum buses or a whole mix. | In testing (0.1) |
 | **[Lumen-Serra](plugins/lumen-serra.md)** | A synth built only from saw waves: 32 saw shapes in two banks, four drifting unison stacks, saw-made pulse width, hard sync, eight filter types, eight-note polyphony and a string-machine ensemble. 36 presets. | **Released** (1.1) |
+| **[Lumen-Spectre](plugins/lumen-spectre.md)** | A spectral filter: draw a Mask across a thousand thin frequency bands, or build it from points, curves, steps and saws, then shift, smear, freeze and whisper it, moved by an LFO, an ADSR or the sound itself. | In development |
 
 ## Lumen-Index
 
@@ -29,6 +30,12 @@ New in 1.4: Read chords from a clip as it plays or from a dropped MIDI file; Und
 
 Thirty-two saws, including a bank of hollow bipolar saws, stacked four deep on four oscillators, reshaped with Width and Sync, through eight filter types and a string ensemble. **[See everything Lumen-Serra does →](plugins/lumen-serra.md)**
 
+## Lumen-Spectre
+
+[![Lumen-Spectre: the Mask over the live spectrum, with Filter, Texture, Motion and Output](docs/images/lumen-spectre/spectre.png)](plugins/lumen-spectre.md)
+
+A spectral filter. Draw a Mask across the spectrum, or build it from points joined by curves, steps and saws, then slide it, smear it, freeze it and scatter it into a whisper, moved by an LFO, an ADSR or the sound itself. In development. **[See what Lumen-Spectre does →](plugins/lumen-spectre.md)**
+
 ## Formats
 
 | | Windows | Mac (Intel and Apple Silicon) |
@@ -45,6 +52,7 @@ Formats for the plugins in development are settled when each one is released.
 
 - **Lumen-Index:** [get it on Gumroad](https://lumenmachina.gumroad.com/l/lumen-index), pay what you want.
 - **Lumen-Serra:** coming to Gumroad.
+- **Lumen-Spectre:** in development.
 - The other plugins will be listed here as each one is released.
 
 ## Feedback

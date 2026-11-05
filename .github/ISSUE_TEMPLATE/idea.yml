@@ -6,7 +6,7 @@ body:
     id: plugin
     attributes:
       label: Plugin
-      options: [Lumen-Index, Lumen-Haze, Lumen-Oxide, Lumen-Serra, The whole suite]
+      options: [Lumen-Index, Lumen-Haze, Lumen-Oxide, Lumen-Serra, Lumen-Spectre, The whole suite]
     validations:
       required: true
   - type: textarea

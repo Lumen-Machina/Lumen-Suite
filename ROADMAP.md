@@ -3,6 +3,7 @@
 What is coming next, roughly in order. Plans change as each plugin is played with.
 
 ## Now
+- **Lumen-Spectre:** a spectral filter. Its sound and controls are being shaped in a playable sketch: the drawn and point-built Mask, Smear, Ghost and Freeze, and an LFO, ADSR and envelope follower to move it. The plugin is next.
 - **Lumen-Serra 1.1** is out: the saw synth, now with eight-note polyphony, and 36 presets. Bug reports and preset ideas welcome.
 - **Lumen-Index 1.4** is out: read the chords of a clip or a MIDI file onto the pads, Undo and Redo, scales that play, and a full [user guide](plugins/lumen-index-guide.md). Bug reports welcome.
 - **Lumen-Core:** shared parts for the whole suite. The tape engine and the design book (the look every window is built from) are in; knobs, meters and the preset code are next.

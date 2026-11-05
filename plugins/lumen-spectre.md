@@ -31,11 +31,11 @@ Start from a shape (Open, Slit, Comb, Vowel, Stairs or Ash), invert it, or smoot
 
 Three sources can move Shift, Spread, Depth, Ghost or Smear:
 
-- **LFO:** six shapes, from a smooth sine to slow random drift.
+- **LFO:** six shapes, from a smooth sine to slow random drift, free or locked to your song's tempo from 1/2 to 1/16 notes, dotted and triplet included.
 - **ADSR:** an envelope started by every drum hit or note attack, on every beat, or by MIDI notes you play.
 - **Envelope follower:** the louder the sound, the further it moves.
 
-While the Mask moves, the shape you made stays as a solid line and what you hear is drawn beside it, so you can keep editing. One switch turns all movement off, and back on, without losing any settings.
+While the Mask moves, the shape you made stays as a solid line and what you hear is drawn beside it, so you can keep editing. **Split** moves the left and right channels apart: the LFO drifts out of step between them and the envelopes push them opposite ways, so the Mask sweeps across the stereo field. One switch turns all movement off, and back on, without losing any settings.
 
 ## Look
 

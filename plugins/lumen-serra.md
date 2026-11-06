@@ -56,7 +56,9 @@ In Bitwig, the controls are laid out on remote-control pages for your controller
 
 ## Getting it
 
-Downloads for Windows and Mac are coming to Gumroad.
+**[Get Lumen-Serra on Gumroad →](https://lumenmachina.gumroad.com/l/lumen-serra)**
+
+Pay what you want. Windows and Mac downloads, each with a full manual; new versions appear in your Gumroad library.
 
 - [User guide](lumen-serra-guide.md): every control, the presets, and recipes for supersaws, sync leads, acid lines and more.
 

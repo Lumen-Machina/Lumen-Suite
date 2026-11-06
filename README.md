@@ -28,7 +28,7 @@ New in 1.4: Read chords from a clip as it plays or from a dropped MIDI file; Und
 
 [![Lumen-Serra: four oscillators of saws, the live scope, filter, amp and ensemble](docs/images/lumen-serra/serra.png)](plugins/lumen-serra.md)
 
-Thirty-two saws, including a bank of hollow bipolar saws, stacked four deep on four oscillators, reshaped with Width and Sync, through eight filter types and a string ensemble. **[See everything Lumen-Serra does →](plugins/lumen-serra.md)** · [User guide](plugins/lumen-serra-guide.md)
+Thirty-two saws, including a bank of hollow bipolar saws, stacked four deep on four oscillators, reshaped with Width and Sync, through eight filter types and a string ensemble. **[See everything Lumen-Serra does →](plugins/lumen-serra.md)** · **[Get it on Gumroad →](https://lumenmachina.gumroad.com/l/lumen-serra)** · [User guide](plugins/lumen-serra-guide.md)
 
 ## Lumen-Spectre
 
@@ -51,7 +51,7 @@ Formats for the plugins in development are settled when each one is released.
 ## Getting the plugins
 
 - **Lumen-Index:** [get it on Gumroad](https://lumenmachina.gumroad.com/l/lumen-index), pay what you want.
-- **Lumen-Serra:** coming to Gumroad.
+- **Lumen-Serra:** [get it on Gumroad](https://lumenmachina.gumroad.com/l/lumen-serra), pay what you want.
 - **Lumen-Spectre:** in development.
 - The other plugins will be listed here as each one is released.
 

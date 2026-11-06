@@ -8,7 +8,7 @@ Every plugin takes its look from one of Lumen-Machina's photographs: its colors,
 
 | Plugin | What it is | Status |
 |---|---|---|
-| **[Lumen-Index](plugins/lumen-index.md)** | A chord and scale companion: find any chord or scale by name or by the notes you play, put chords on 12 pads with borrowed chords and smooth voice leading, read the chords of a clip or MIDI file, run a progression in time with your song, catch what you play over it, and drag it all into your arrangement as MIDI. Also a standalone app for MIDI keyboards and hardware synths. | **Released** (1.4) |
+| **[Lumen-Index](plugins/lumen-index.md)** | A chord and scale companion: find any chord or scale by name or by the notes you play, put chords on 12 pads with borrowed chords and smooth voice leading, read the chords of a clip or MIDI file, run a progression in time with your song, catch what you play over it, and drag it all into your arrangement as MIDI. Also a standalone app for MIDI keyboards and hardware synths. | **Released** (1.4.1) |
 | **Lumen-Haze** | A tape-worn polysynth for soft pads, fuzzy leads and shoegaze walls. | Early demo, not planned for release |
 | **Lumen-Oxide** | A tape machine effect: saturation, wow, flutter, hiss and wear, with five tape types (Ferric, Chrome, Reel, VHS, Micro) and three tape speeds. For single tracks, drum buses or a whole mix. | Parked (0.1) |
 | **[Lumen-Serra](plugins/lumen-serra.md)** | A synth built only from saw waves: 32 saw shapes in two banks, four drifting unison stacks, saw-made pulse width, hard sync, eight filter types, eight-note polyphony and a string-machine ensemble. 36 presets. | **Released** (1.1, early) |
@@ -18,9 +18,9 @@ Every plugin takes its look from one of Lumen-Machina's photographs: its colors,
 
 [![Lumen-Index: the Pads page, with the progression at bar 5 and Dm7 and Fmaj7 glowing as the usual next chords](docs/images/lumen-index/pads.png)](plugins/lumen-index.md)
 
-Find chords and scales by name or by the notes you play, and put them on 12 pads with smooth voice leading and hints for what comes next. Run a progression in time with your song, read the chords out of a clip or MIDI file, catch the line you play over them, and drag it all into your arrangement. For Bitwig, Logic, GarageBand and MainStage, and as a standalone app for hardware.
+Find chords and scales by name or by the notes you play, and put them on 12 pads with smooth voice leading and hints for what comes next. Run a progression in time with your song, read the chords out of a clip or MIDI file, catch the line you play over them, and drag it all into your arrangement. For Bitwig and Logic, and as a standalone app for hardware.
 
-New in 1.4: Read chords from a clip as it plays or from a dropped MIDI file; Undo and Redo, 32 steps deep, for the pads, the progression and the key; scales that play as you browse; slash chords that keep their bass on the pads; and dragged clips timed at your song's tempo with no tempo prompt in Bitwig.
+New in 1.4.1: Read keeps up with real playing (several changes in a bar, guitar shapes, arpeggios with a tune on top); chord names a musician would write, spelt by what they do in your key; Caught keeps 8 chords; 1-beat slots on the progression; and a big round of fixes for timing, hosts and the standalone apps.
 
 **[See everything Lumen-Index does →](plugins/lumen-index.md)** · **[Get it on Gumroad →](https://lumenmachina.gumroad.com/l/lumen-index)** · [User guide](plugins/lumen-index-guide.md)
 
